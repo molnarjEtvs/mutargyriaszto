@@ -1,0 +1,17 @@
+#ez a parancs a projekt létrehozásárért felelős:
+composer create-project laravel/laravel mutargyriaszto
+
+#Létrehoz egy view-t
+php artisan make:view master
+
+#controllert hozok létre:
+php artisan make:controller iranyitasController
+
+#migracio létrehozása:
+php artisan make:migration create_tav_meresek
+
+#migráció megfuttatas
+php artisan migrate
+
+#model létrehozás:
+php artisan make:model Tavmeres
